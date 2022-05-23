@@ -14,7 +14,6 @@ de grep -v ˆ# /etc/passwd | cut -f7 -d: | uniq | wc -l.
 
 int main() {
     int pipe_fds[2][2];
-
     pipe(pipe_fds[0]);
 
     if (fork() == 0) {
